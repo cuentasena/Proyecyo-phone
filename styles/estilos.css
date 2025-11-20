@@ -9,8 +9,6 @@ body {
   background: #fff;
   color: #333;
 }
-
-/* CABECERA */
 .cab {
   background: #4b5b68;
   display: flex;
@@ -31,7 +29,6 @@ body {
   text-decoration: underline;
 }
 
-/* HERO */
 .hero {
   display: flex;
   align-items: center;
@@ -88,7 +85,6 @@ body {
   gap: 10px;
 }
 
-/* BRANDS */
 .brands {
   background: #f0f0f0;
   display: flex;
@@ -103,7 +99,6 @@ body {
   opacity: 0.6;
 }
 
-/* FEATURES */
 .features {
   display: flex;
   justify-content: space-around;
@@ -124,7 +119,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* PROJECTS */
 .projects {
   background: #fff;
   padding: 60px 80px;
@@ -146,7 +140,6 @@ body {
   border-radius: 6px;
 }
 
-/* BLOG & TWITTER */
 .blog-twitter {
   display: flex;
   justify-content: space-between;
@@ -175,7 +168,6 @@ body {
   margin-bottom: 5px;
 }
 
-/* FOOTER */
 footer {
   background: #fdfeff;
   color: #333;
@@ -200,7 +192,105 @@ footer .social img {
 footer .social img:hover {
   opacity: 1;
 }
-
+@media (min-width: 1280px) {
+  .menu a {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 100px 80px;
+  }
+  .features {
+    padding: 100px 80px;
+  }
+  .projects {
+    padding: 80px 100px;
+  }
+}
+@media (min-width: 921px) and (max-width: 1279px) {
+  .cab {
+    padding: 25px 60px;
+  }
+  .menu a {
+    font-size: 1.1em;
+  }
+  .hero {
+    padding: 80px 50px;
+  }
+  .hero-img {
+    max-width: 320px;
+  }
+  .brands {
+    gap: 200px;
+  }
+  .features {
+    padding: 80px 50px;
+  }
+  .project-gallery img {
+    width: 24%;
+  }
+  .blog-twitter {
+    padding: 70px 60px;
+  }
+}
+@media (min-width: 769px) and (max-width: 920px) {
+  .cab {
+    padding: 20px 50px;
+  }
+  .hero {
+    padding: 70px 40px;
+  }
+  .hero-img {
+    max-width: 300px;
+  }
+  .brands {
+    gap: 150px;
+  }
+  .features {
+    padding: 70px 40px;
+  }
+  .project-gallery img {
+    width: 30%;
+  }
+  .blog-twitter {
+    padding: 60px 40px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .cab {
+    padding: 20px 30px;
+  }
+  .menu a {
+    font-size: 1em;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding: 50px 30px;
+    text-align: center;
+  }
+  .hero-img {
+    max-width: 260px;
+  }
+  .brands {
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 30px;
+  }
+  .features {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .project-gallery img {
+    width: 48%;
+  }
+  .blog-twitter {
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 40px;
+  }
+  footer {
+    padding: 35px 30px;
+  }
+}
 @media (min-width: 352px) and (max-width: 480px) {
   .cab {
     flex-direction: column;
@@ -272,104 +362,5 @@ footer .social img:hover {
     align-items: flex-start;
     padding: 25px 20px;
     gap: 10px;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .cab {
-    padding: 20px 30px;
-  }
-  .menu a {
-    font-size: 1em;
-  }
-  .hero {
-    flex-direction: column-reverse;
-    padding: 50px 30px;
-    text-align: center;
-  }
-  .hero-img {
-    max-width: 260px;
-  }
-  .brands {
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 30px;
-  }
-  .features {
-    flex-direction: column;
-    gap: 40px;
-  }
-  .project-gallery img {
-    width: 48%;
-  }
-  .blog-twitter {
-    flex-direction: column;
-    padding: 60px 30px;
-    gap: 40px;
-  }
-  footer {
-    padding: 35px 30px;
-  }
-}
-@media (min-width: 769px) and (max-width: 920px) {
-  .cab {
-    padding: 20px 50px;
-  }
-  .hero {
-    padding: 70px 40px;
-  }
-  .hero-img {
-    max-width: 300px;
-  }
-  .brands {
-    gap: 150px;
-  }
-  .features {
-    padding: 70px 40px;
-  }
-  .project-gallery img {
-    width: 30%;
-  }
-  .blog-twitter {
-    padding: 60px 40px;
-  }
-}
-@media (min-width: 921px) and (max-width: 1279px) {
-  .cab {
-    padding: 25px 60px;
-  }
-  .menu a {
-    font-size: 1.1em;
-  }
-  .hero {
-    padding: 80px 50px;
-  }
-  .hero-img {
-    max-width: 320px;
-  }
-  .brands {
-    gap: 200px;
-  }
-  .features {
-    padding: 80px 50px;
-  }
-  .project-gallery img {
-    width: 24%;
-  }
-  .blog-twitter {
-    padding: 70px 60px;
-  }
-}
-@media (min-width: 1280px) {
-  .menu a {
-    font-size: 1.2em;
-  }
-  .hero {
-    padding: 100px 80px;
-  }
-  .features {
-    padding: 100px 80px;
-  }
-  .projects {
-    padding: 80px 100px;
   }
 }
