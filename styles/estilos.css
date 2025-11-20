@@ -40,8 +40,20 @@ body {
   padding: 80px 60px;
   color: #fff;
 }
+.hero-img {
+  flex: 1;
+  max-width: 320px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hero-img img {
-  width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .hero-info {
   max-width: 500px;
@@ -165,16 +177,199 @@ body {
 
 /* FOOTER */
 footer {
-  background: #4b5b68;
-  color: #fff;
-  text-align: center;
-  padding: 30px;
+  background: #fdfeff;
+  color: #333;
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+.footer-right p {
+  margin: 0;
 }
 footer .social img {
   width: 25px;
   margin: 0 8px;
   opacity: 0.8;
+  cursor: pointer;
 }
 footer .social img:hover {
   opacity: 1;
+}
+
+@media (min-width: 352px) and (max-width: 480px) {
+  .cab {
+    flex-direction: column;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .menu a {
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .hero-img {
+    max-width: 220px;
+  }
+  .hero-img img {
+    width: 100%;
+  }
+  .hero-info h1 {
+    font-size: 1.8em;
+  }
+  .hero-btns {
+    flex-direction: column;
+  }
+  .brands {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px;
+  }
+  .features {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .feature img {
+    width: 120px;
+  }
+  .projects {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .project-gallery {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .project-gallery img {
+    width: 100%;
+  }
+  .blog-twitter {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 30px;
+  }
+  .blog,
+  .twitter {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+    gap: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .cab {
+    padding: 20px 30px;
+  }
+  .menu a {
+    font-size: 1em;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding: 50px 30px;
+    text-align: center;
+  }
+  .hero-img {
+    max-width: 260px;
+  }
+  .brands {
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 30px;
+  }
+  .features {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .project-gallery img {
+    width: 48%;
+  }
+  .blog-twitter {
+    flex-direction: column;
+    padding: 60px 30px;
+    gap: 40px;
+  }
+  footer {
+    padding: 35px 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 920px) {
+  .cab {
+    padding: 20px 50px;
+  }
+  .hero {
+    padding: 70px 40px;
+  }
+  .hero-img {
+    max-width: 300px;
+  }
+  .brands {
+    gap: 150px;
+  }
+  .features {
+    padding: 70px 40px;
+  }
+  .project-gallery img {
+    width: 30%;
+  }
+  .blog-twitter {
+    padding: 60px 40px;
+  }
+}
+@media (min-width: 921px) and (max-width: 1279px) {
+  .cab {
+    padding: 25px 60px;
+  }
+  .menu a {
+    font-size: 1.1em;
+  }
+  .hero {
+    padding: 80px 50px;
+  }
+  .hero-img {
+    max-width: 320px;
+  }
+  .brands {
+    gap: 200px;
+  }
+  .features {
+    padding: 80px 50px;
+  }
+  .project-gallery img {
+    width: 24%;
+  }
+  .blog-twitter {
+    padding: 70px 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .menu a {
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 100px 80px;
+  }
+  .features {
+    padding: 100px 80px;
+  }
+  .projects {
+    padding: 80px 100px;
+  }
 }
